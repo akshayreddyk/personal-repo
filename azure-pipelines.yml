@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'inline'
+    script: 'python temperature.py'
+    arguments: '32C'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
